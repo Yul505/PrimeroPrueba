@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Un formulario con las siguientes características</h1>
+    <form>
+    <fieldset>
+        <legend>Información Personal</legend>
+        <label for="nomdeUsuario">Nombre</label><br>
+        <input type="text" name="nomdeUsuario" id="nomdeUsuario" requerido><br>
+        <label for="apdeUsuario">Apellido</label><br>
+        <input type="text" name="apdeUsuario" id="apdeUsuario" requerido><br>
+        <label for="fechN">Fecha de Nacimiento</label><br>
+        <input type="date" name="fechN" id="fechN" requerido><br>
+        <label for="gender">Género</label><br>
+        <input type="radio" name="geender" id="masculino"><label for="masculino" requerido>Masculino</label>
+        <input type="radio" name="geender" id="femenono"><label for="femenono" requerido>Femenino</label>
+        <input type="radio" name="geender" id="otro"><label for="otro" requerido>Otro</label>
+    </fieldset>
+    <fieldset>
+        <legend>Información de Contacto</legend>
+        <label for="emaIl">Dirección de Correo Electrónico:</label><br>
+        <input type="email" name="emaIl" id="emaIl" requerido><br>
+        <label for="numTel">Número de Teléfono:</label><br>
+        <input type="tel" name="numTel" id="numTel" required><br>
+        <label for="camTex">Dirección:</label><br>
+        <textarea name="camTex" id="camTex" placeholder="campo de texto"></textarea>
+    </fieldset>
+    </form>
+    <br>
+    <input type="checkbox" name="acepto"><label for="acepto">acepto los términos</label>
+    <br><br>
+    <input type="submit">
+</body>
+</html>
